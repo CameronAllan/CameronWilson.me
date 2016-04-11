@@ -1,4 +1,4 @@
-
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800,800italic);
 
 html, body{
 	margin:0;
@@ -50,6 +50,16 @@ h1{
 	color:#000;
 }
 
+h2{
+	text-decoration: none;
+	color: #000;
+}
+
+p{
+	text-decoration: none;
+	color: #000;
+}
+
 /*
 Top content
 */
@@ -62,6 +72,47 @@ Top content
 	background-position:center center;
 	text-align: center;
 }
+
+.navbar {
+	background-color: #000;
+	width: 100%;
+	height: 20px;
+}
+
+.left-nav {
+	float: left;
+	font-size: 150%;
+	margin:15px 0px 0px 20px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.right-nav {
+	float: right;
+	font-size: 150%;
+	margin:10px 15px 0px 0px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.right-nav span {
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.dropdown-toggle,
+.dropdown-toggle:active,
+.dropdown-toggle:hover,
+.dropdown-toggle:focus
+{
+	background: none;
+	outline: none;
+	border-color: white;
+}
+
+
+
+
 
 /*
 Top content responsive
@@ -88,28 +139,150 @@ Top content responsive
 	}
 }
 
-.display-pic {
-	height: 100%;
+/* Main body */
+
+.about{
+	width:100%;
+	padding: 10px;
+	text-align: center;
+}
+
+.subtitle{
 	width: 100%;
 }
-.top-content h2 {
-	color: #fff;
-	margin-left: 10px;
+
+.bio {
+	text-decoration: none;
+	font-size: 150%;
 }
 
-.top-content h3 {
-	color: #fff;
+/* Resume */
+@media (max-width: 574px){
+	.jobtitle span {
+		font-size: 100%;
+	}
+	.jobdates {
+		font-size: :100%;
+	}
+	.resumeentry li {
+		font-size: 100%;
+	}
 }
 
-.profile-unit {
+@media (min-width: 575px){
+	.jobtitle span {
+		font-size: 150%;
+	}
+	.jobdates {
+		font-size: :150%;
+	}
+	.jobabout li {
+		font-size: 150%;
+	}
+}
+
+
+.resumeentry ul {
+	list-style-type: circle;
+	margin: 10px;
+}
+
+.entryheader {
+	height: 60px;
+	width: 100%;
+}
+
+.jobtitle {
 	float: left;
-	margin: 25px 25px 25px 25px;
-	width: 50%;
+	font-size: 150%;
 }
 
-.profile-unit img {
+.jobdates {
+	float: right;
+	font-size: 150%;
+}
+
+/* Portfolio */
+.projectimg {
 	float: left;
-	
+}
+
+.description h3 {
+	color: #000;
+}
+
+.description p {
+	color: #000;
+}
+
+@media (max-width: 574px){
+	.projectimg{
+		width: 190px;
+		height: 250px;
+	}
+	.project{
+		height: 250px;
+	}
+	.description {
+		margin-left: 200px;
+	}
+	.description h3 {
+		font-size: 125%;
+	}
+
+	.description p {
+		font-size: 125%
+	}
+
+}
+
+@media (min-width: 575px){
+	.projectimg{
+		width: 380px;
+		height: 500px;
+	}
+
+	.project{
+		height: 500px;
+	}
+	.description {
+		margin-left: 390px;
+	}
+	.description h3 {
+		font-size: 175%;
+	}
+
+	.description p {
+		font-size: 175%
+	}
+
+}
+
+
+/* Footer */
+
+.footer-contact {
+	background-color: #000;
+	height:180px;
+
+}
+
+.footer-contact h2 {
+	color: #fff;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.footer-contact p {
+	color:#fff;
+	text-align: center;
+	font-size: 150%;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.footer-contact a {
+	color: #fff;
 }
 
 
